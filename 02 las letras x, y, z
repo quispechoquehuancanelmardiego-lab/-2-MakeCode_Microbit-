@@ -1,0 +1,39 @@
+#practica 2
+#realize un programa  que muestre las letras x,y,z
+#usando el boton a=x; b=y; a+b=z
+# el lenguaje python para Microbit
+def on_button_pressed_a():
+        basic.show_leds("""
+        # . . . #
+        . # . # .
+        . . # . .
+        . # . # .
+        # . . . #
+        """)
+        basic.pause(500)
+        basic.clear_screen()
+input.on_button_pressed(Button.A, on_button_pressed_a)
+#para el boton b
+def on_button_pressed_b():
+        basic.show_leds("""
+        # . . . #
+        . # . # .
+        . . # . .
+        . . # . .
+        . . # . .
+        """)
+        basic.pause(500)
+        basic.clear_screen()
+input.on_button_pressed(Button.B, on_button_pressed_b)
+#para el boton a+b
+def on_button_pressed_ab():
+        basic.show_leds("""
+        # # # # #
+        . . . # .
+        . . # . .
+        . # . . .
+        # # # # #
+        """)
+        basic.pause(500)
+        basic.clear_screen()
+input.on_button_pressed(Button.AB, on_button_pressed_ab)
