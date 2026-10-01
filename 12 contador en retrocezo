@@ -1,0 +1,13 @@
+#practica 12
+#realiza un programa que simule un condator en retroceso
+#usando FOR y el boton B , en el lenguaje Python
+def on_button_pressed_b():
+    for i in range(5, 0, -1):
+     basic.show_number(i)
+     basic.pause(300)
+    #al terminar buble
+    basic.show_icon(IconNames.YES)
+    basic.show_string(" FINALIZADO!")
+    basic.pause(500)
+    basic.clear_screen()
+input.on_button_pressed(Button.B, on_button_pressed_b)
