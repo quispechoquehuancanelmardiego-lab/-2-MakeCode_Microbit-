@@ -1,0 +1,16 @@
+#practica 14
+#realiza un programa que simule un condator en retroceso del 1 al 5
+#usando while y el boton B , en el lenguaje Python
+def on_button_pressed_b():
+    i=5
+    while  i>=1:
+     basic.show_number(i)
+     basic.pause(500)
+     i=i-1
+    # terminar buble
+    basic.show_icon(IconNames.YES)
+    basic.show_string(" FINAL!")
+    basic.pause(500)
+    basic.clear_screen()
+input.on_button_pressed(Button.B, on_button_pressed_b)
+
