@@ -1,0 +1,16 @@
+#practica 13
+#realiza un programa que simule un condator del 1 al 5
+#usando while y el boton A , en el lenguaje Python
+def on_button_pressed_a():
+    i=1 
+    while  i<=5:
+     basic.show_number(i)
+     basic.pause(500)
+     i=i+1
+    # terminar buble
+    basic.show_icon(IconNames.YES)
+    basic.show_string(" FINAL!")
+    basic.pause(500)
+    basic.clear_screen()
+input.on_button_pressed(Button.A, on_button_pressed_a)
+
